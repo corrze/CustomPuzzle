@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYT Connections Puzzle</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="evaluate-container">
+        <h1>NYT Connections Puzzle</h1>
+        <div class="instructions">
+            <p>Instructions: Select 4 words that you think belong to the same category, then click Submit. Find all four categories to complete the puzzle!</p>
+        </div>
+        
+        <div id="message" class="message">
+            Select 4 words that belong to the same category
+        </div>
+        
+        <div id="result-overlay" class="result-overlay">
+            <div id="result-icon" class="result-icon"></div>
+        </div>
+        
+        <div id="board">
+            <!-- Game tiles will be generated here -->
+        </div>
+        
+        <div id="buttons" class="buttons">
+            <button id="submit" class="submit" type="button">Submit</button>
+            <button id="reset" class="secondary" type="button">Reset Puzzle</button>
+        </div>
+        
+        <div id="solved-categories" class="solved-categories">
+            <!-- Solved categories will appear here -->
+        </div>
+    </div>
+</body>
+</html>
